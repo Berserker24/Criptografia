@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+
+<body>
+    <div class="Tudo">
+        <form>
+            <label for="Entrada">Insira a frase:</label><br>
+            <input type="text" id="Entrada"><br>
+            <br>
+            <label>Selecione a codificação:</label><br>
+
+            <div id="Codigos">
+                <select name="Cifras" id="Cifras">
+                    <option value="">---Escolha uma Cifra---</option>
+                    <option value="Cesar">Cifra de César</option>
+                    <option value="Base">Base 64</option>
+                </select>
+                <br>
+                <br>
+                <div id="InputChave" style="display: none;">
+                    <label for="Chave">Insira a Chave:</label><br>
+                    <input type="text" id="Chave" name="ChaveCesar"><br>
+                </div>
+            </div>
+            <br>
+            <div id="Decifra">
+                <input type="radio" id="Codificar" name="Codificações" value="Codificar">
+                <label for="Codificar">Codificar</label>
+                <br>
+                <input type="radio" id="Decodificar" name="Codificações" value="Codificar">
+                <label for="Codificar">Decodificar</label>
+                <br>
+            </div>
+
+        </form>
+
+            <br>
+            <div>
+                <button type="submit" id="botaoFim"><p id="exibeFim">Codificar Mensagem!</p></button>
+                <p>Resultado:</p>
+                <p id="Resultado"></p>
+            </div>    
+    </div>
+    
+    
+    
+    <script src="index.js"></script>
+</body>
+    
+
+</html>
